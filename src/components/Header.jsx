@@ -6,7 +6,7 @@ function Header() {
   const [darkTheme, setDarkTheme] = useState(false);
 
   return (
-    <header className="max-w-5xl mx-auto flex justify-between py-2">
+    <header className="max-w-4xl mx-auto flex justify-between py-2">
       <div className="text-3xl">
         <LiaBookSolid />
       </div>

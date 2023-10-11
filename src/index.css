@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+ul {
+  list-style-type: none;
+  }
+}
+
+.meaning li {
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.meaning li::before {
+  content: "\2022";
+  color: purple;
+  margin-right: 10px;
+}
+
+@layer components {
+  .title-style::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 85%;
+    background: rgba(0, 0, 0, 0.1);
+    height: 1px;
+  }
+
+  .source {
+    position: relative;
+  }
+
+  .source::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    height: 1px;
+  }
+}
